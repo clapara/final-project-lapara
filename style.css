@@ -72,6 +72,10 @@ figcaption {
     display: block;
 }
 
+.hover {
+    opacity: 50%; 
+}
+
 .container.image .caption,
 .container.image figcaption {
     padding: 5px 10px;

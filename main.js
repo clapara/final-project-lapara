@@ -1,3 +1,5 @@
+//* first, the filter *//
+
 const select = document.querySelector(".filter")
 
 select.addEventListener("change", function(e) {
@@ -15,3 +17,36 @@ make_visible.forEach(function(animals) {
 });
 
 });
+
+//* now for the hover event listener - goal: when mouse hovers over an image in the collage, it gets opaque & text with animal name shows up *//
+
+const images = document.querySelectorAll(".img");
+
+images.forEach(function (hover) {
+    hover.addEventListener("mouseover", function (h) {
+        h.preventDefault();
+        const hovered_img = h.target;
+        hovered_img.classList.add("hover");
+    });
+    
+});
+
+const mouse_out= document.querySelectorAll(".img");
+
+mouse_out.forEach(function (full_opacity) {
+    full_opacity.addEventListener("mouseout", function(h) {
+        h.preventDefault();
+
+        const left_image = h.target;
+        left_image.classList.remove("hover");
+        
+    });
+});
+    
+    
+
+    
+
+
+
+
