@@ -28,8 +28,9 @@ images.forEach(function (hover) {
         const hovered_img = h.target;
         hovered_img.classList.add("hover");
     });
-    
+
 });
+    
 
 const mouse_out= document.querySelectorAll(".img");
 
@@ -42,6 +43,33 @@ mouse_out.forEach(function (full_opacity) {
         
     });
 });
+
+
+//* next step: hover for the name - goal: when mouse hovers over an img, 'named' gets added to 'inner' >> name appears on image *//
+
+/* const naming = document.querySelectorAll(".inner");
+
+naming.forEach(function (named) { 
+    named.addEventListener("mouseover", function (n) {
+        n.preventDefault();
+        const add_name = n.target;
+        add_name.classList.add("named"); //* want to add 'named' to 'inner' 
+    });
+    
+}); */
+
+
+//* ok final step: when I click on an image, make it as large as the section 'animals' & show text about the animal
+
+/* const full_size = document.querySelectorAll(".img");
+
+choose.addEventListener("click", function (f) {
+
+
+}); */ 
+
+
+
     
     
 

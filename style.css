@@ -66,15 +66,37 @@ figcaption {
 
 .img {
     display: none;
+    position: relative;
 }
 
 .img.active {
     display: block;
+    position: relative;
 }
+
+.inner {
+    display: none;
+    
+}
+
+.inner.named {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 80px;
+} 
+
 
 .hover {
     opacity: 50%; 
 }
+
+/**.inner {
+    display: none;
+}*/
+
+
+
 
 .container.image .caption,
 .container.image figcaption {
