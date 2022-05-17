@@ -61,12 +61,19 @@ naming.forEach(function (named) {
 
 //* ok final step: when I click on an image, make it as large as the section 'animals' & show text about the animal
 
-/* const full_size = document.querySelectorAll(".img");
+/* const full_size = document.querySelectorAll(".img")
 
-choose.addEventListener("click", function (f) {
+full_size.forEach(function(big) {
+    big.addEventListener("click", function(f) {
+        f.preventDefault();
+        const clicked_image = f.target;
+        clicked_image.classList.add("big"); //* make 'big' a class in CSS/HTML that makes the pic bigger + text OR just show new pic??? 
+
+    })
+}
+) */ 
 
 
-}); */ 
 
 
 

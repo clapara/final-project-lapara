@@ -91,12 +91,9 @@ figcaption {
     opacity: 50%; 
 }
 
-/**.inner {
+#text1 {
     display: none;
-}*/
-
-
-
+}
 
 .container.image .caption,
 .container.image figcaption {
