@@ -29,24 +29,30 @@ images.forEach(function (hover) {
         hovered_img.classList.add("hover");
     });
 
-});
-    
-
-const mouse_out= document.querySelectorAll(".img");
-
-mouse_out.forEach(function (full_opacity) {
-    full_opacity.addEventListener("mouseout", function(h) {
+    hover.addEventListener("mouseout", function(h) {
         h.preventDefault();
 
         const left_image = h.target;
         left_image.classList.remove("hover");
         
     });
+    hover.addEventListener("click", function(h) {
+        h.preventDefault();
+
+        const container = h.target.closest(".img");
+        container.classList.toggle("big");
+    });  
+
 });
+    
 
 
-//* next step: hover for the name - goal: when mouse hovers over an img, 'named' gets added to 'inner' >> name appears on image *//
+    
+  
 
+
+
+//* next step: click for the name - goal: when mouse hovers over an img, 'named' gets added to 'inner' >> name appears on image *//
 /* const naming = document.querySelectorAll(".inner");
 
 naming.forEach(function (named) { 
@@ -72,6 +78,26 @@ full_size.forEach(function(big) {
     })
 }
 ) */ 
+
+//* ok, bringing up text BELOW filter 
+
+/* const choose = document.querySelectorAll(".img")
+
+choose.forEach(function (click) {
+    click.addEventListener("click", function(c) {
+        c.preventDefault();
+        const clicked_image = 
+        const show_text = c.target;
+        const show_text = clicked_image.querySelector(".text"); //* I DON'T KNOW WHAT TO DO WITH THIS
+        show_text.classList.add("clicked");
+
+
+    })
+
+}) */
+
+
+
 
 
 

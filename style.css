@@ -91,8 +91,16 @@ figcaption {
     opacity: 50%; 
 }
 
-#text1 {
+/* #text1:not(.clicked) {
     display: none;
+}
+
+.text.clicked{
+    display: block;
+} */
+
+#animals > div.big {
+    flex-basis: 100%;
 }
 
 .container.image .caption,
@@ -153,6 +161,7 @@ figcaption {
 
     #animals > div {
         flex-basis: calc(33% - 2.5px);
+        transition: all 0.5s ease-in-out;
         
     }
 }
