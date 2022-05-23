@@ -72,18 +72,6 @@ figcaption {
 .img.active {
     display: block;
     position: relative;
-}
-
-.inner {
-    display: none;
-    
-}
-
-.inner.named {
-    display: block;
-    position: absolute;
-    top: 125px;
-    left: 80px;
 } 
 
 
@@ -91,16 +79,21 @@ figcaption {
     opacity: 50%; 
 }
 
-/* #text1:not(.clicked) {
-    display: none;
-}
-
-.text.clicked{
-    display: block;
-} */
-
 #animals > div.big {
     flex-basis: 100%;
+}
+
+#animals > div .inner {
+
+    display: none;
+    
+}
+
+#animals > div.big .inner {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 80px;
 }
 
 .container.image .caption,

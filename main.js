@@ -41,7 +41,10 @@ images.forEach(function (hover) {
 
         const container = h.target.closest(".img");
         container.classList.toggle("big");
+
     });  
+   
+        
 
 });
     
